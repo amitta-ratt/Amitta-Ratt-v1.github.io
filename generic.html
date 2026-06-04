@@ -58,7 +58,21 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="contactform.php">
+
+							<form action="https://api.web3forms.com/submit" method="POST">
+
+    							<!-- Replace with your Web3Forms Access Key -->
+    							<input type="hidden" name="access_key" value="3d374674-10dd-4001-9a96-3cc581be3789">
+
+    							<!-- Optional Email Subject -->
+    							<input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
+
+    							<!-- Redirect after successful submission -->
+    							<input type="hidden" name="redirect" value="https://amitta-ratt.github.io/thank-you.html">
+
+    							<!-- Spam Protection -->
+    							<input type="checkbox" name="botcheck" style="display:none;">
+								
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
